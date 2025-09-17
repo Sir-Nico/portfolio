@@ -1,15 +1,31 @@
-import Link from "next/link"
+import NavLinks from "./NavLinks"
+import MobNavLinks from "./MobNavLinks"
+
+const navLinks = [
+  {
+    title: "About",
+    href: "#about"
+  },
+  {
+    title:"Experience",
+    href: "#experience"
+  },
+  {
+    title: "Projects",
+    href: "#projects"
+  },
+  {
+    title: "Contact",
+    href: "#contact"
+  }
+]
 
 export const Navbar = () => {
     return (
     <div className="flex p-4">
         <p className="grow font-bold text-4xl">Portfolio</p>
-        <div id="links" className="grow flex justify-end gap-10 text-2xl">
-            <Link href={"#about"}>About</Link>
-            <Link href={"#experience"}>Experience</Link>
-            <Link href={"#projects"}>Projects</Link>
-            <Link href={"#contact"}>Contact</Link>
-        </div>
+        <NavLinks links={navLinks}/>
+        <MobNavLinks links={navLinks}/>
     </div>
     )
 }

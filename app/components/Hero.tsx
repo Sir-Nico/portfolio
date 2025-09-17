@@ -1,5 +1,5 @@
 export const Hero = () => {
     return (
-        <div>Hero</div>
+        <div className="">Hero</div>
     )
 }
