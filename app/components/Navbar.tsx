@@ -23,7 +23,7 @@ const navLinks = [
 export const Navbar = () => {
   return (
     <div className="flex p-4 w-full">
-      <p className="grow font-bold text-4xl">Portfolio</p>
+      <p className="grow font-bold text-4xl">John Doe</p>
       <NavLinks links={navLinks} />
       <MobNavLinks links={navLinks} />
     </div>

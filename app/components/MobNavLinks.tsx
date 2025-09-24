@@ -11,7 +11,7 @@ interface NavLinksProps {
 }
 
 const MobNavLinks: FC<NavLinksProps> = ({ links }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div id="links" className="grow flex justify-end gap-10 text-xl sm:hidden">
