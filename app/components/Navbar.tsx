@@ -1,31 +1,31 @@
-import NavLinks from "./NavLinks"
-import MobNavLinks from "./MobNavLinks"
+import NavLinks from "./NavLinks";
+import MobNavLinks from "./MobNavLinks";
 
 const navLinks = [
   {
     title: "About",
-    href: "#about"
+    href: "#about",
   },
   {
-    title:"Experience",
-    href: "#experience"
+    title: "Experience",
+    href: "#experience",
   },
   {
     title: "Projects",
-    href: "#projects"
+    href: "#projects",
   },
   {
     title: "Contact",
-    href: "#contact"
-  }
-]
+    href: "#contact",
+  },
+];
 
 export const Navbar = () => {
-    return (
+  return (
     <div className="flex p-4 w-full">
-        <p className="grow font-bold text-4xl">Portfolio</p>
-        <NavLinks links={navLinks}/>
-        <MobNavLinks links={navLinks}/>
+      <p className="grow font-bold text-4xl">Portfolio</p>
+      <NavLinks links={navLinks} />
+      <MobNavLinks links={navLinks} />
     </div>
-    )
-}
+  );
+};
