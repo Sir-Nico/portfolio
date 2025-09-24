@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <div className="flex flex-col w-4/5 bg-blue-950 p-5 m-10 rounded-xl">
       <div>
-        <p className="text-2xl font-bold pb-3">About me</p>
+        <p className="text-4xl font-bold p-4">About me</p>
       </div>
       <div className="flex items-center">
         <div className="">
