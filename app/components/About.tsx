@@ -1,6 +1,7 @@
 import Image from "next/image";
-import heroImg from "../assets/bking.jpg";
+import heroImg from "@app/assets/bking.jpg";
 import { AboutSection } from "./AboutSection";
+import aboutInfo from "@app/utils/aboutInfo.json";
 
 export const About = () => {
   return (
@@ -22,19 +23,11 @@ export const About = () => {
           />
         </div>
         <div className="px-3">
-          <AboutSection icon={"tabler:pointer"} title={"Frontend Development"}>
-            In the beginning God created the heavens and the earth.
-          </AboutSection>
-          <AboutSection icon={"tabler:database"} title={"Backend Development"}>
-            Now the earth was formless and empty, darkness was over the surface
-            of the deep, and the Spirit of God was hovering over the waters.
-          </AboutSection>
-          <AboutSection
-            icon={"tabler:directions"}
-            title={"Fullstack Development"}
-          >
-            And God said, “Let there be light,” and there was light.
-          </AboutSection>
+          {aboutInfo.map((item) => (
+            <AboutSection icon={item.icon} title={item.title}>
+              {item.description}
+            </AboutSection>
+          ))}
         </div>
       </div>
     </div>
