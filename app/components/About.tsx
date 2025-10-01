@@ -22,27 +22,19 @@ export const About = () => {
           />
         </div>
         <div className="px-3">
-          <AboutSection
-            icon={"tabler:pointer"}
-            title={"Frontend Development"}
-            description={
-              "In the beginning God created the heavens and the earth."
-            }
-          />
-          <AboutSection
-            icon={"tabler:database"}
-            title={"Backend Development"}
-            description={
-              "Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters."
-            }
-          />
+          <AboutSection icon={"tabler:pointer"} title={"Frontend Development"}>
+            In the beginning God created the heavens and the earth.
+          </AboutSection>
+          <AboutSection icon={"tabler:database"} title={"Backend Development"}>
+            Now the earth was formless and empty, darkness was over the surface
+            of the deep, and the Spirit of God was hovering over the waters.
+          </AboutSection>
           <AboutSection
             icon={"tabler:directions"}
             title={"Fullstack Development"}
-            description={
-              "And God said, “Let there be light,” and there was light."
-            }
-          />
+          >
+            And God said, “Let there be light,” and there was light.
+          </AboutSection>
         </div>
       </div>
     </div>

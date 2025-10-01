@@ -1,13 +1,14 @@
 import { Icon } from "@iconify/react";
+import { ReactNode } from "react"
 
 
 interface AboutSectionProps {
   icon: string;
   title: string;
-  description: string;
+  children: ReactNode;
 }
 
-export const AboutSection = ({ icon, title, description }: AboutSectionProps) => {
+export const AboutSection = ({ icon, title, children }: AboutSectionProps) => {
   return (
     <div className="flex m-3">
       <div>
@@ -15,7 +16,7 @@ export const AboutSection = ({ icon, title, description }: AboutSectionProps) =>
       </div>
       <div className="flex-col m-2">
         <div className="font-bold text-xl">{title}</div>
-        <div>{description}</div>
+        <div>{children}</div>
       </div>
     </div>
   );
