@@ -6,7 +6,7 @@ import Button from "./Button";
 
 export const Hero = () => {
   const foo = () => {
-    console.log("Sigma sigma on the wall, who is the skibidiest of them all?");
+    console.log("hallo");
   };
 
   return (
