@@ -12,13 +12,14 @@ export const Hero = () => {
   return (
     <div className="flex w-4/5 items-center p-5 m-10">
       <div className="grow space-y-5">
-        <p className="text-6xl font-bold bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent">
-          John Doe
+        <p className="text-6xl font-bold">
+          Hi, I'm{" "}
+          <span className="text-6xl font-bold bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent">
+            Nico
+          </span>
+          !
         </p>
-        <p>
-          Somewhat competent once in a blue moon, although not effective before
-          3-4 business days (business day constitutes leap days only)
-        </p>
+        <p>Student at NTNU (BSc. Informatikk) and aspiring developer</p>
         <Button onClick={foo}>Contact Me</Button>
       </div>
       <div className="grow">

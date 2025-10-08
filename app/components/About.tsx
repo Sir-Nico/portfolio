@@ -1,6 +1,6 @@
 import Image from "next/image";
 import heroImg from "@app/assets/bking.jpg";
-import { AboutSection } from "./AboutSection";
+import { AboutSection, AboutSectionType } from "./AboutSection";
 import aboutInfo from "@app/utils/aboutInfo.json";
 
 export const About = () => {
@@ -23,10 +23,13 @@ export const About = () => {
           />
         </div>
         <div className="px-3">
-          {aboutInfo.map((item) => (
-            <AboutSection icon={item.icon} title={item.title}>
-              {item.description}
-            </AboutSection>
+          {aboutInfo.map((item: AboutSectionType) => (
+            <AboutSection
+              key={item.title}
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+            />
           ))}
         </div>
       </div>

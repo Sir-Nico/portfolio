@@ -1,17 +1,17 @@
 [
     {
-        "title": "Frontend Development",
+        "title": "Who am I?",
         "icon": "tabler:pointer",
-        "description": "In the beginning God created the heavens and the earth."
+        "description": "I am a 19 year old student and aspiring developer, with a passion for learning and creating. I've been coding since 10, and always try to improve day by day."
     }, 
     {
-        "title": "Backend Development",
+        "title": "Education",
         "icon": "tabler:database",
-        "description": "Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters."
+        "description": "I am currently pursuing a Bachelor's degree in Computer Science (Informatikk) at NTNU, as well as having completed an IT-relevant high school education."
     }, 
     {
-        "title": "Fullstack Development",
+        "title": "Skills",
         "icon": "tabler:directions",
-        "description": "And God said, “Let there be light,” and there was light."
+        "description": "I have experience with both frontend and backend development, and I enjoy working on all aspects of web applications."
     }
 ]

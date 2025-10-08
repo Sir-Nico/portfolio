@@ -23,7 +23,7 @@ const MobNavLinks: FC<NavLinksProps> = ({ links }) => {
       {open && (
         <div className="absolute top-20 flex flex-col gap-3 p-5 rounded-md from-blue-750 to-blue-950 bg-gradient-to-br text-right">
           {links.map((link) => {
-            return <Link href={link.href}>{link.title}</Link>;
+            return <Link key={link.title} href={link.href}>{link.title}</Link>;
           })}
         </div>
       )}
