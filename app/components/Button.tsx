@@ -11,7 +11,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         onClick={onClick}
-        className={`bg-blue-700 px-4 py-2 rounded-2xl hover:cursor-pointer hover:bg-blue-700/80 ${className}`}
+        className={`bg-accent px-4 py-2 rounded-2xl hover:cursor-pointer hover:bg-accent/80 ${className}`}
         {...props}
       >
         {children}

@@ -14,7 +14,7 @@ export const Hero = () => {
       <div className="grow space-y-5">
         <p className="text-6xl font-bold">
           Hi, I'm{" "}
-          <span className="text-6xl font-bold bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent">
+          <span className="text-6xl font-bold bg-gradient-to-b from-foreground to-foreground/40 bg-clip-text text-transparent">
             Nico
           </span>
           !

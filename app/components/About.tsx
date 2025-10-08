@@ -1,13 +1,16 @@
 import Image from "next/image";
 import heroImg from "@app/assets/bking.jpg";
-import { AboutSection, AboutSectionType } from "./AboutSection";
-import aboutInfo from "@app/utils/aboutInfo.json";
+import { AboutSection } from "./AboutSection";
+import { AboutSectionType } from "@/types/About";
+import { AboutService } from "@/backend/AboutService";
 
 export const About = () => {
+  const data = AboutService.getAboutInfo();
+
   return (
     <div
       id="about"
-      className="flex flex-col w-4/5 bg-blue-950 p-5 m-10 rounded-xl"
+      className="flex flex-col w-4/5 bg-secondary p-5 m-10 rounded-xl"
     >
       <div>
         <p className="text-4xl font-bold p-4">About me</p>
@@ -23,7 +26,7 @@ export const About = () => {
           />
         </div>
         <div className="px-3">
-          {aboutInfo.map((item: AboutSectionType) => (
+          {data.map((item: AboutSectionType) => (
             <AboutSection
               key={item.title}
               icon={item.icon}
