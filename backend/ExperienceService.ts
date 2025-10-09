@@ -1,7 +1,9 @@
 import { SkillItemType } from "@/types/Skills";
+import { ExperienceSectionType } from "@/types/Experience";
 
 interface IExperienceService {
   getSkillInfo: () => SkillItemType[];
+  getExperienceInfo: () => ExperienceSectionType[];
 }
 
 export const ExperienceService: IExperienceService = {
@@ -33,7 +35,22 @@ export const ExperienceService: IExperienceService = {
       },
       {
         title: "SQL",
-        icon: "mdi:database",
+        icon: "simple-icons:mysql",
+      },
+      {
+        title: "Scratch",
+        icon: "simple-icons:scratch",
+      },
+    ];
+  },
+  getExperienceInfo: () => {
+    return [
+      {
+        title: "Scratch Goat",
+        icon: "simple-icons:scratch",
+        duration: "2014 - present",
+        description:
+          "Jeg har et spill på scratch med nesten 700 visninger altså, ikke for å flexe for hardt, men det har også 33 likes og 24 stjerner. Yup, I'm kind of a big deal",
       },
     ];
   },

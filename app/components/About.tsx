@@ -10,13 +10,12 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col w-4/5 bg-secondary p-5 m-10 rounded-xl"
+      className="flex flex-col w-4/5 max-sm:w-full bg-secondary p-5 m-10 rounded-xl"
     >
       <div>
-        <p className="text-4xl font-bold p-4">About me</p>
+        <p className="text-4xl font-bold p-4">More about me</p>
       </div>
-      <div className="flex items-center">
-        <div className="">
+      <div className="flex max-sm:flex-col items-center">
           <Image
             src={heroImg}
             width={300}
@@ -24,7 +23,6 @@ export const About = () => {
             alt="An image of me"
             className="rounded-full m-5"
           />
-        </div>
         <div className="px-3">
           {data.map((item: AboutSectionType) => (
             <AboutSection

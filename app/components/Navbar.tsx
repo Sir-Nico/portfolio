@@ -1,5 +1,6 @@
 import NavLinks from "./NavLinks";
 import MobNavLinks from "./MobNavLinks";
+import Link from "next/link";
 
 const navLinks = [
   {
@@ -23,7 +24,7 @@ const navLinks = [
 export const Navbar = () => {
   return (
     <div className="flex p-10 w-full">
-      <p className="grow font-bold text-4xl">Nicolay B.</p>
+      <Link href="/" className="grow font-bold text-4xl text-accent">Nicolay B.</Link>
       <NavLinks links={navLinks} />
       <MobNavLinks links={navLinks} />
     </div>

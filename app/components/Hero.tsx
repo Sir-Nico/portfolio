@@ -10,19 +10,19 @@ export const Hero = () => {
   };
 
   return (
-    <div className="flex w-4/5 items-center p-5 m-10">
+    <div className="flex max-sm:flex-col w-4/5 items-center p-5 m-10">
       <div className="grow space-y-5">
         <p className="text-6xl font-bold">
           Hi, I'm{" "}
-          <span className="text-6xl font-bold bg-gradient-to-b from-foreground to-foreground/40 bg-clip-text text-transparent">
+          <span className="text-6xl font-roboto_m font-bold text-accent animate-bounce">
             Nico
           </span>
           !
         </p>
-        <p>Student at NTNU (BSc. Informatikk) and aspiring developer</p>
+        <p>Student at NTNU (BSc. Informatikk) and software developer</p>
         <Button onClick={foo}>Contact Me</Button>
       </div>
-      <div className="grow">
+      <div className="grow max-sm:pt-5">
         <Image
           src={heroImg}
           width={400}

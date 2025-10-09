@@ -8,8 +8,8 @@ export const AboutSection: FC<AboutSectionType> = ({
   description,
 }) => {
   return (
-    <div className="rounded-md ml-5 p-2 flex bg-no-repeat hover:bg-gradient-to-r from-accent to-transparent bg-[length:0_100%] hover:bg-[length:100%_100%] transition-all duration-400">
-      <div className="items-center">
+    <div className="rounded-md ml-5 items-center p-2 flex bg-no-repeat hover:bg-gradient-to-r from-accent to-transparent bg-[length:0_100%] hover:bg-[length:100%_100%] transition-all duration-400">
+      <div>
         <Icon icon={icon} className="size-15" />
       </div>
       <div className="flex-col m-2">
