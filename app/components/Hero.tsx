@@ -52,8 +52,11 @@ export const Hero = () => {
           className="rounded-xl"
         />
       </div>
-      <div className="absolute left-[50%] top-[81%]">
-        <Button onClick={goToAbout} className="bg-transparent hover:shadow-none hover:bg-transparent p-0 max-sm:hidden">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[81%]">
+        <Button
+          onClick={goToAbout}
+          className="bg-transparent hover:shadow-none hover:bg-transparent max-sm:hidden"
+        >
           <Icon icon="tabler:arrow-down" className="size-8" />
         </Button>
       </div>
