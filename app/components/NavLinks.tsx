@@ -16,7 +16,7 @@ const NavLinks: FC<NavLinksProps> = ({ links }) => {
     >
       {links.map((link) => {
         return (
-          <Link key={link.title} href={link.href}>
+          <Link key={link.title} href={link.href} className="hover:font-extrabold transition-all duration-200">
             {link.title}
           </Link>
         );

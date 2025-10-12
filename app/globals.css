@@ -15,6 +15,7 @@
   --font-roboto: var(--font-roboto_c);
   --font-roboto_m: var(--font-roboto_m);
   --font-mono: var(--font-geist-mono);
+  --shadow-glow: 0 0 10px 0 var(--color-accent);
 
   --animate-typewriter: typewriter-loop 2s steps(4) infinite blink 1s step-end infinite;
   @keyframes typewriter-loop {
