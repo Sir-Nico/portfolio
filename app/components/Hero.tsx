@@ -23,7 +23,7 @@ export const Hero = () => {
   };
 
   return (
-    <div className="flex max-sm:flex-col w-4/5 items-center p-5 m-10 h-screen">
+    <div className="flex max-sm:flex-col w-4/5 items-center  h-screen">
       <div className="grow space-y-5 max-sm:pt-45">
         <p className="text-6xl font-bold">
           Hi, I'm{" "}
