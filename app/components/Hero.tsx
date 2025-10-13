@@ -11,11 +11,11 @@ export const Hero = () => {
   };
 
   const goToLinkedIn = () => {
-    window.location.href = "https://www.linkedin.com/in/nicolay-rennemo/";
+    open("https://www.linkedin.com/in/nicolay-rennemo/", "_blank");
   };
 
   const goToGitHub = () => {
-    window.location.href = "https://github.com/Sir-Nico";
+    open("https://github.com/Sir-Nico", "_blank");
   };
 
   const goToAbout = () => {
@@ -35,10 +35,10 @@ export const Hero = () => {
         <p>Student at NTNU (BSc. Informatikk) and software developer</p>
         <div className="flex space-x-2">
           <Button onClick={goToContact}>Contact Me</Button>
-          <Button onClick={goToLinkedIn}>
+          <Button onClick={goToLinkedIn} title="Check out my LinkedIn!">
             <Icon icon="mdi:linkedin" className="size-6" />
           </Button>
-          <Button onClick={goToGitHub}>
+          <Button onClick={goToGitHub} title="Check out my GitHub!">
             <Icon icon="mdi:github" className="size-6" />
           </Button>
         </div>
