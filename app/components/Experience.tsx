@@ -13,7 +13,7 @@ export const Experience = () => {
   return (
     <div id="experience" className="flex flex-col sm:w-4/5 max-sm:w-full">
       <div>
-        <p className="text-2xl font-bold p-4">Experience</p>
+        <p className="text-2xl font-bold p-4">Skills and Experience</p>
       </div>
       <div className="flex max-sm:flex-col w-full">
         <div className="sm:grow sm:w-1/2">
