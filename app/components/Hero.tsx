@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import heroImg from "@app/assets/megpfp.jpg";
-import bgImg from "@app/assets/ntnu.jpg";
+
 
 import Button from "./Button";
 import { Icon } from "@iconify/react";

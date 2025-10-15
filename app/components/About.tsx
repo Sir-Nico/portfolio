@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col w-4/5 max-sm:w-full bg-secondary p-5 scroll-m-45 m-10 rounded-xl"
+      className="flex flex-col w-4/5 max-sm:w-full bg-secondary p-5 scroll-m-40 m-10 rounded-xl"
     >
       <div>
         <p className="text-4xl font-bold p-4">More about me</p>
