@@ -11,7 +11,7 @@ export const AboutService: IAboutService = {
         title: "Who am I?",
         icon: "tabler:user-question",
         description:
-          "I am a 19 year old student and software developer, based in Trondheim, Norway. I was introduced to coding in late 2014, and have been learning ever since.",
+          "I am a 19 year old student and software developer, based in Trondheim, Norway. I was introduced to coding in late 2014, and I've been developing ever since.",
       },
       {
         title: "Education",
